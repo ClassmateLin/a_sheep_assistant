@@ -4,7 +4,9 @@
 
 ## 安装
 
-- 自行编译:
+1. 从[Releases](https://github.com/ClassmateLin/a_sheep_assistant/releases)中下载二进制包。
+
+2. 自行编译:
 
 ```
 $ git clone https://github.com/ClassmateLin/a_sheep_assistant/ && cd a_sheep_assistant/
