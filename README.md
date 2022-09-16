@@ -13,11 +13,22 @@ $ cargo build --releases
 执行完命令, 可在`./target/release`找到二进制文件`a_sheep_assistant`。
 
 ## 使用
+![img](./imgs/help.png)
 
 ```
+// 默认120秒通过1次。t是请求头中的数据, 需要抓包获取。
 $ ./a_sheep_assistant -t eyJhbGciOiJIUzI1NiIsInR5cCI6xXXXXXXXXXXXXXXXXXXXXXXX
-
 恭喜成功完成闯关...
+```
+
+``` 
+// 60秒通过, 仅一次
+$ ./a_sheep_assistant -t eyJhbGciOiJIUzI1NiIsInR5cCI6xXXXXXXXXXXXXXXXXXXXXXXX -secs 60
+```
+
+``` 
+// 60秒通过, 总共通过10次
+$ ./a_sheep_assistant -t eyJhbGciOiJIUzI1NiIsInR5cCI6xXXXXXXXXXXXXXXXXXXXXXXX --secs 60 --times 10
 ```
 
 ## 免责声明
